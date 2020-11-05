@@ -1,0 +1,16 @@
+
+.card{
+    border: 1px solid lightgrey;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0 5px 8px 0 rgba(34, 65, 114, 0.2);
+    -moz-box-shadow: 0 5px 8px 0 rgba(34, 65, 114, 0.2);
+    box-shadow: 0 5px 8px 0 rgba(34, 65, 114, 0.2);
+    transform: scale(1);
+  }

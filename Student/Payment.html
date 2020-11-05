@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Student Portal - UNi Portal Management System (UPMS)</title>
+
+    <!-- CDN -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/uni-portal-system/css/Shared/SharedStyle.css">
+    <link rel="stylesheet" href="/uni-portal-system/css/Student/StudentStyle.css">
+    <link rel="shortcut icon" href="/uni-portal-system/images/Menu/favicon-light.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="container-fluid sticky-top bg-white">
+        <nav class="navbar navbar-expand-xl p-2 bottom-divider">
+            <a class="navbar-brand" href="#">
+                <img src="/uni-portal-system/images/Brand-1.png" alt="logo" class="img-fluid" style="width:500px;">
+            </a>
+            <button class="navbar-toggler ml-auto mb-2 mt-3" type="button" data-toggle="collapse"
+                data-target="#MyNavHorizontal">
+                <span class="fa fa-caret-down fa-2x" style="color: #224172;"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-5 mr-3 pl-5" id="MyNavHorizontal">
+
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/uni-portal-system/Student/Home.html">Home</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/uni-portal-system/Student/Courses.html">Courses</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/uni-portal-system/Student/Timetable.html">Timetable</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/uni-portal-system/Student/Transcript.html">Transcript</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/uni-portal-system/Student/Payment.html">Payment</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/uni-portal-system/Student/Roadmap.html">Road Map</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/uni-portal-system/Student/Feedback.html">Feedback</a>
+                    </li>
+                </ul>
+                <div class="dropdown ml-auto">
+                    <a href="" class="nav-link icon-no-margin" data-toggle="dropdown" role="button">
+                        <span class="avatar current"><span class="fa fa-user-circle-o fa-3x mr-2"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right p-3 menu" id="action-menu-1-menu"
+                        id="dropdown-menu-1">
+
+                        <center>
+                            <a target="_blank" href="/uni-portal-system/images/Menu/Logo-2.png"> <img src="/uni-portal-system/images/Menu/Logo-2.png"
+                                    class="mb-3" width="50%"></a>
+                            <p class="lead text-muted">Mehtab Kazmi</p>
+                            <p class="text-muted">S2019027021@uni.edu.pk</p>
+                            <div class="dropdown-divider"></div>
+                            <a href="/uni-portal-system/Login.html" class="btn btn-UNi" style="color: white;">Logout</a>
+                        </center>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- End of NavBar -->
+
+
+
+    <div class="container my-3">
+        <div class="row">
+            <div class="table-responsive col-lg-10 col-md-10 col-sm-10">
+                <table class="table table-borderless table-sm">
+                    <thead>
+                        <tr>
+                            <th colspan="4">School of Professional Advancement</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>ID No:</td>
+                        <td colspan="3">F2019027021</td>
+                    </tr>
+                    <tr>
+                        <td>Name:</td>
+                        <td>Syed Mehtab Kazmi</td>
+                        <td>Degree:</td>
+                        <td>MCS</td>
+                    </tr>
+                    <tr>
+                        <td>Father's Name:</td>
+                        <td colspan="3">Syed Aftab Kazmi</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <a target="_blank" href="/uni-portal-system/images/Kazmi.jpg"> <img class="img-thumbnail bg-UNi rounded ml-auto"
+                        src="/uni-portal-system/images/Kazmi.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <table class="table table-bordered">
+                    <thead class="bg-UNi">
+                        <tr>
+                            <th>Payment Date</th>
+                            <th>Account</th>
+                            <th>Amount</th>
+                            <th>Bank</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>04 Sep 2019</td>
+                            <td>ADMISSION FEE</td>
+                            <td>Rs 10,000</td>
+                            <td>Habib Bank Limited (UMT)</td>
+                        </tr>
+                        <tr>
+                            <td>04 Sep 2019</td>
+                            <td>COURSE FEE (Tuition Fee)</td>
+                            <td>Rs 28,063</td>
+                            <td>Habib Bank Limited (UMT)</td>
+                        </tr>
+                        <tr>
+                            <td>04 Feb 2020</td>
+                            <td>COURSE FEE (Tuition Fee)</td>
+                            <td>Rs 28,063</td>
+                            <td>Habib Bank Limited (UMT)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h5 class="py-2"><strong>Payment Summary</strong></h5>
+                <table class="table table-bordered">
+                    <thead class="table bg-UNi table-bordered text-white text-center pb-3">
+                        <tr>
+                            <th>Account</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ADMISSION FEE</td>
+                            <td>Rs 10,000</td>
+                        </tr>
+                        <tr>
+                            <td>COURSE FEE (Tuition Fee)</td>
+                            <td>Rs 56,126</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>Rs 66,126</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class=" pt-5 text-muted text-center mt-5">
+        <p class="mb-1">&copy; 2020 UNi Portal Management System</p>
+        <ul class="list-inline">
+            <li class="list-inline-item "><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <!-- Custom Script -->
+
+    <!-- End of Custom Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/7c58c9e194.js" crossorigin="anonymous"></script>
+    <script src="/uni-portal-system/js/Admin/AdminSTDList.js"></script>
+    <script src="/uni-portal-system/js/Shared/SharedJS.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+.input-group-text {
+  background-color: white;
+  color: black;
+}
+
+.container-login {
+  background-color: #224172;
+  color: white;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.blink {
+  -moz-animation: blink normal 3.5s infinite ease-in-out; /* Firefox */
+  -webkit-animation: blink normal 3.5s infinite ease-in-out; /* Webkit */
+  -ms-animation: blink normal 3.5s infinite ease-in-out; /* IE */
+  animation: blink normal 3.5s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+
+/* Firefox old*/
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+/* IE */
+@-ms-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

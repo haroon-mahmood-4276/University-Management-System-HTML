@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Student Portal - UNi Portal Management System (UPMS)</title>
+
+    <!-- CDN -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/uni-portal-system/css/Shared/SharedStyle.css">
+    <link rel="stylesheet" href="/uni-portal-system/css/Student/StudentStyle.css">
+    <link rel="shortcut icon" href="/uni-portal-system/images/Menu/favicon-light.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="container-fluid sticky-top bg-white">
+        <nav class="navbar navbar-expand-xl p-2 bottom-divider" style="position: sticky;">
+            <a class="navbar-brand" href="#">
+                <img src="/uni-portal-system/images/Brand-1.png" alt="logo" class="img-fluid" style="width:500px;">
+            </a>
+            <button class="navbar-toggler ml-auto mb-2 mt-3" type="button" data-toggle="collapse"
+                data-target="#MyNavHorizontal">
+                <span class="fa fa-caret-down fa-2x" style="color: #224172;"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-5 mr-3 pl-5" id="MyNavHorizontal">
+
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/uni-portal-system/Student/Home.html">Home</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/uni-portal-system/Student/Courses.html">Courses</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/uni-portal-system/Student/Timetable.html">Timetable</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/uni-portal-system/Student/Transcript.html">Transcript</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/uni-portal-system/Student/Payment.html">Payment</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/uni-portal-system/Student/Roadmap.html">Road Map</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/uni-portal-system/Student/Feedback.html">Feedback</a>
+                    </li>
+                </ul>
+                <div class="dropdown ml-auto">
+                    <a href="" class="nav-link icon-no-margin" data-toggle="dropdown" role="button">
+                        <span class="avatar current"><span class="fa fa-user-circle-o fa-3x mr-2"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right p-3 menu" id="action-menu-1-menu"
+                        id="dropdown-menu-1">
+
+                        <center>
+                            <a target="_blank" href="/uni-portal-system/images/Menu/Logo-2.png"> <img src="/uni-portal-system/images/Menu/Logo-2.png"
+                                    class="mb-3" width="50%"></a>
+                            <p class="lead text-muted">Mehtab Kazmi</p>
+                            <p class="text-muted">S2019027021@uni.edu.pk</p>
+                            <div class="dropdown-divider"></div>
+                            <a href="/uni-portal-system/Login.html" class="btn btn-UNi" style="color: white;">Logout</a>
+                        </center>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- End of NavBar -->
+
+
+    <div class="std-container mt-5 mb-5">
+        <div class="table-responsive-md">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="bg-UNi">
+                        <th scope="col">Course ID</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Cr Hr</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Instructor</th>
+                        <th scope="col">Sec</th>
+                        <th scope="col">Semester</th>
+                        <th scope="col" style="width: 10%;" class="text-center"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">XC365</th>
+                        <td>Software Engineering</td>
+                        <td>3</td>
+                        <td>Core Course</td>
+                        <td>Munib Ahmed</td>
+                        <td>A</td>
+                        <td>Spring 2020</td>
+                        <td class="link text-center">
+                            <a class="SAttendance" href=" #"><i class="m-1 fa fa-black-tie fa-2x"
+                                    aria-hidden="true"></i></a>
+                            <a class="SMarks" href=" #"><i class="m-1 fa fa-book fa-2x" aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">XC380</th>
+                        <td>Algorithm Analysis and Design</td>
+                        <td>3</td>
+                        <td>Core Course</td>
+                        <td>Muhammad Fahad Khan</td>
+                        <td>A</td>
+                        <td>Spring 2020</td>
+                        <td class="link text-center">
+                            <a class="SAttendance" href=" #"><i class="m-1 fa fa-black-tie fa-2x"
+                                    aria-hidden="true"></i></a>
+                            <a class="SMarks" href=" #"><i class="m-1 fa fa-book fa-2x" aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">XC385</th>
+                        <td>Web Programming</td>
+                        <td>3</td>
+                        <td>Core Course</td>
+                        <td>Muhammad Umar Hameed</td>
+                        <td>A</td>
+                        <td>Spring 2020</td>
+                        <td class="link text-center">
+                            <a class="SAttendance" href=" #"><i class="m-1 fa fa-black-tie fa-2x"
+                                    aria-hidden="true"></i></a>
+                            <a class="SMarks" href=" #"><i class="m-1 fa fa-book fa-2x" aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">XC421</th>
+                        <td>Object Oriented Programming</td>
+                        <td>3</td>
+                        <td>Core Course</td>
+                        <td>Muhammad Tauseef Hanif</td>
+                        <td>A</td>
+                        <td>Spring 2020</td>
+                        <td class="link text-center">
+                            <a class="SAttendance" href=" #"><i class="m-1 fa fa-black-tie fa-2x"
+                                    aria-hidden="true"></i></a>
+                            <a class="SMarks" href=" #"><i class="m-1 fa fa-book fa-2x" aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">XC435</th>
+                        <td>Computer Organization and Architecture</td>
+                        <td>3</td>
+                        <td>Core Course</td>
+                        <td>Hassan Tariq</td>
+                        <td>A</td>
+                        <td>Spring 2020</td>
+                        <td class="link text-center">
+                            <a class="SAttendance" href=" #"><i class="m-1 fa fa-black-tie fa-2x"
+                                    aria-hidden="true"></i></a>
+                            <a class="SMarks" href=" #"><i class="m-1 fa fa-book fa-2x" aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class=" pt-5 text-muted text-center mt-5">
+        <p class="mb-1">&copy; 2020 UNi Portal Management System</p>
+        <ul class="list-inline">
+            <li class="list-inline-item "><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <!-- Custom Script -->
+
+    <!-- End of Custom Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/7c58c9e194.js" crossorigin="anonymous"></script>
+    <script src="/uni-portal-system/js/Shared/SharedJS.js"></script>
+</body>
+
+</html>

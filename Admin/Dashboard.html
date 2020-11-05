@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - UNi Portal Management System (UPMS)</title>
+
+    <!-- CDN -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/css/Shared/SharedStyle.css">
+    <link rel="stylesheet" href="/css/Admin/Admin.css">
+    <link rel="shortcut icon" href="/images/Menu/favicon-light.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="container-fluid sticky-top bg-white">
+        <nav class="navbar navbar-expand-md p-2 bottom-divider">
+            <a class="navbar-brand" href="#">
+                <img src="/images/Brand-1.png" alt="logo" class="img-fluid" style="width:500px;">
+            </a>
+            <button class="navbar-toggler ml-auto mb-2 mt-3" type="button" data-toggle="collapse"
+                data-target="#MyNavHorizontal">
+                <span class="fa fa-caret-down fa-2x" style="color: #224172;"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-5 mr-3 pl-5" id="MyNavHorizontal">
+
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Admin/Dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Admin/StudentList.html">Student List</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Admin/TeacherList.html">Staff List</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="Admin/Email.html">Email</a>
+                    </li> -->
+                </ul>
+                <div class="dropdown ml-auto">
+                    <a href="" class="nav-link icon-no-margin" data-toggle="dropdown" role="button">
+                        <span class="avatar current"><span class="fa fa-user-circle-o fa-3x mr-2"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right p-3 menu" id="action-menu-1-menu"
+                        id="dropdown-menu-1">
+
+                        <center>
+                            <a target="_blank" href="/images/Menu/Logo-2.png"> <img src="/images/Menu/Logo-2.png"
+                                    class="mb-3" width="50%"></a>
+                            <p class="lead text-muted">Mehtab Kazmi</p>
+                            <p class="text-muted">A2019027021@uni.edu.pk</p>
+                            <div class="dropdown-divider"></div>
+                            <a href="/Login.html" class="btn btn-UNi" style="color: white;">Logout</a>
+                        </center>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- End of NavBar -->
+
+    <div class="container-lg mb-5 text-center">
+        <!-- UMT Numbers -->
+        <div style=" padding: 50px; color: #064473;">
+
+            <div>
+
+                <div class="card-deck ">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">29+</h2>
+                            <p class="card-text">Schools</p>
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">140</h2>
+                            <p class="card-text">Programs</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">700</h2>
+                            <p class="card-text">Faculty Members</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">25,000</h2>
+                            <p class="card-text">Students</p>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">2</h2>
+                            <p class="card-text">Online Databases</p>
+                        </div>
+                    </div>
+
+                </div><br>
+
+                <div class="card-deck ">
+
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h2 class="card-title">School of Professional Advancement</h2>
+                            <h4 class="card-text">SPA</h4>
+                        </div>
+
+                        <div class="card-deck mx-1">
+
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h2 class="card-title">Bachelor of Professional Studies</h2>
+                                    <h4 class="card-text">BPS</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h2 class="card-title">Master of Computer Sciences</h2>
+                                    <h4 class="card-text">MCS</h4>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h2 class="card-title">Master of Banking and Finance</h2>
+                                    <h4 class="card-text">MBF</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h2 class="card-title">Master of Project Management</h2>
+                                    <h4 class="card-text">MPM</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class=" pt-5 text-muted text-center mt-5">
+        <p class="mb-1">&copy; 2020 UNi Portal Management System</p>
+        <ul class="list-inline">
+            <li class="list-inline-item "><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <!-- Custom Script -->
+
+    <!-- End of Custom Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/7c58c9e194.js" crossorigin="anonymous"></script>
+    <script src="/js/Shared/SharedJS.js"></script>
+</body>
+
+</html>

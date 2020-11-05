@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance - UNi Portal Management System (UPMS)</title>
+
+    <!-- CDN -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/uni-portal-system/css/Shared/SharedStyle.css">
+    <link rel="shortcut icon" href="/uni-portal-system/images/Menu/favicon-light.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="container-fluid sticky-top bg-white">
+        <nav class="navbar navbar-expand-md p-2 bottom-divider">
+            <a class="navbar-brand" href="#">
+                <img src="/uni-portal-system/images/Brand-1.png" alt="logo" class="img-fluid" style="width:500px;">
+            </a>
+            <button class="navbar-toggler ml-auto mb-2 mt-3" type="button" data-toggle="collapse"
+                data-target="#MyNavHorizontal">
+                <span class="fa fa-caret-down fa-2x" style="color: #224172;"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-5 mr-3 pl-5" id="MyNavHorizontal">
+
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/uni-portal-system/Teacher/Student/Attendance.html">Student Attendance</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/uni-portal-system/Teacher/Student/Marks.html">Student Marks</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="Teacher/Email.html">Email</a>
+                    </li> -->
+                </ul>
+                <div class="dropdown ml-auto">
+                    <a href="" class="nav-link icon-no-margin" data-toggle="dropdown" role="button">
+                        <span class="avatar current"><span class="fa fa-user-circle-o fa-3x mr-2"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right p-3 menu" id="action-menu-1-menu"
+                        id="dropdown-menu-1">
+
+                        <center>
+                            <a target="_blank" href="/uni-portal-system/images/Menu/Logo-2.png"> <img src="/uni-portal-system/images/Menu/Logo-2.png"
+                                    class="mb-3" width="50%"></a>
+                            <p class="lead text-muted">Mehtab Kazmi</p>
+                            <p class="text-muted">T2019027021@uni.edu.pk</p>
+                            <div class="dropdown-divider"></div>
+                            <a href="/uni-portal-system/Login.html" class="btn btn-UNi" style="color: white;">Logout</a>
+                        </center>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- End of NavBar -->
+
+
+
+    <!-- Filter Area -->
+
+    <div class="container my-3">
+
+        <form>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+
+                    <label class="custom-select-label" for="cbPrograms">Programs</label>
+                    <select name="cbPrograms" class="custom-select d-block" id="cbPrograms" required>
+                        <option selected>Select</option>
+                        <option value="MCS">MCS</option>
+                        <option value="MIT">MIT</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+
+                    <label class="custom-select-label" for="cbSection">Section</label>
+                    <select name="cbSection" class="custom-select d-block" id="cbSection" required>
+                        <option selected>Select</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 py-3">
+
+                    <label class="custom-select-label" for="cbSubjects">Subject</label>
+                    <select name="cbSubjects" class="custom-select d-block" id="cbSubjects" required>
+                        <option selected>Select</option>
+                        <option value="OOP">Object Oriented Programming(OOP)</option>
+                        <option value="WEB">Web Programming</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+                    <label class="custom-select-label" for="dtStartClass">Class Date</label>
+                    <input type="date" class="form-control" placeholder="Date" id="DateClass" required>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 py-3">
+
+                    <label class="custom-select-label" for="dtStartClass">Class Start Time</label>
+                    <input type="time" class="form-control" placeholder="Start Time" id="TimeStartClass" required>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 py-3">
+
+                    <label class="custom-select-label" for="dtStartClass">Class End Time</label>
+                    <input type="time" class="form-control" placeholder="End Time" id="TimeEndClass" required>
+                </div>
+
+            </div>
+
+            <button class="btn btn-UNi btn-md" type="submit">Create Lecture</button>
+            <button class="btn btn-UNi btn-md" type="button">Refresh</button>
+        </form>
+
+    </div>
+
+
+    <!-- End of Filter Area -->
+
+    <!-- List of Student -->
+    <div class="container mt-5 mb-5">
+        <form action="#" method="get">
+            <div class="table-responsive-md">
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="bg-UNi">
+                            <th scope="col">#</th>
+                            <th scope="col">User ID</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Program</th>
+                            <th scope="col">Sec</th>
+                            <th scope="col" style="width: 15%;" class="text-center">Status</th>
+                        </tr>
+                    </thead>
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col" colspan="6">SPA - MCS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>F2019027012</td>
+                            <td>Haroon Mahmood</td>
+                            <td>SPA - MCS</td>
+                            <td>A</td>
+                            <td class="text-center">
+                                <form>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="F2019027012Chk"
+                                            name="F2019027012Chk">
+                                        <label class="custom-control-label" for="F2019027012Chk">Present</label>
+                                    </div>
+                                </form>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>F2019027011</td>
+                            <td>Manan Waheed</td>
+                            <td>SPA - MCS</td>
+                            <td>A</td>
+                            <td class="text-center">
+                                <form>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="F2019027011Chk"
+                                            name="F2019027011Chk" checked>
+                                        <label class="custom-control-label" for="F2019027011Chk">Present</label>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>F2019027021</td>
+                            <td>Mehtab Kazmi</td>
+                            <td>SPA - MCS</td>
+                            <td>A</td>
+                            <td class="text-center">
+                                <form>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="F2019027021Chk"
+                                            name="F2019027021Chk" checked>
+                                        <label class="custom-control-label" for="F2019027021Chk">Present</label>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>F2019027027</td>
+                            <td>Muhammad Moiz</td>
+                            <td>SPA - MCS</td>
+                            <td>A</td>
+                            <td class="text-center">
+                                <form>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="F2019027027Chk"
+                                            name="F2019027027Chk">
+                                        <label class="custom-control-label" for="F2019027027Chk">Present</label>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn btn-UNi btn-md btn-block" type="submit">Save Lecture</button>
+        </form>
+    </div>
+    <!-- End of List of Student -->
+
+
+    <!-- Footer -->
+    <footer class=" pt-5 text-muted text-center mt-5">
+        <p class="mb-1">&copy; 2020 UNi Portal Management System</p>
+        <ul class="list-inline">
+            <li class="list-inline-item "><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <!-- Custom Script -->
+
+    <!-- End of Custom Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/7c58c9e194.js" crossorigin="anonymous"></script>
+    <script src="/uni-portal-system/js/Shared/SharedJS.js"></script>
+</body>
+
+</html>

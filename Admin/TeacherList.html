@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff List - UNi Portal Management System (UPMS)</title>
+
+    <!-- CDN -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/css/Shared/SharedStyle.css">
+    <link rel="shortcut icon" href="/images/Menu/favicon-light.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="container-fluid sticky-top bg-white">
+        <nav class="navbar navbar-expand-md p-2 bottom-divider">
+            <a class="navbar-brand" href="#">
+                <img src="/images/Brand-1.png" alt="logo" class="img-fluid" style="width:500px;">
+            </a>
+            <button class="navbar-toggler ml-auto mb-2 mt-3" type="button" data-toggle="collapse"
+                data-target="#MyNavHorizontal">
+                <span class="fa fa-caret-down fa-2x" style="color: #224172;"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-5 mr-3 pl-5" id="MyNavHorizontal">
+
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Admin/Dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Admin/StudentList.html">Student List</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Admin/TeacherList.html">Staff List</a>
+                    </li>
+                    <!-- <li class="left-divider ml-2 mr-2"></li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="Admin/Email.html">Email</a>
+                    </li> -->
+                </ul>
+                <div class="dropdown ml-auto">
+                    <a href="" class="nav-link icon-no-margin" data-toggle="dropdown" role="button">
+                        <span class="avatar current"><span class="fa fa-user-circle-o fa-3x mr-2"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right p-3 menu" id="action-menu-1-menu"
+                        id="dropdown-menu-1">
+
+                        <center>
+                            <a target="_blank" href="/images/Menu/Logo-2.png"> <img src="/images/Menu/Logo-2.png"
+                                    class="mb-3" width="50%"></a>
+                            <p class="lead text-muted">Mehtab Kazmi</p>
+                            <p class="text-muted">A2019027021@uni.edu.pk</p>
+                            <div class="dropdown-divider"></div>
+                            <a href="/Login.html" class="btn btn-UNi" style="color: white;">Logout</a>
+                        </center>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- End of NavBar -->
+
+
+    <!-- List of Student -->
+    <div class="container mt-5 mb-5">
+        <div class="table-responsive-md">
+            <input class="form-control" id="myInput" type="text" placeholder="Search.." autofocus>
+            <br>
+            <table class="table table-hover">
+                <thead>
+                    <tr class="bg-UNi">
+                        <th scope="col">#</th>
+                        <th scope="col">Full Name</th>
+                        <th scope="col">Post</th>
+                        <th scope="col" style="width: 10%;" class="text-center">Link</th>
+                    </tr>
+                </thead>
+                <thead class="thead-light" id="myTable">
+                    <tr>
+                        <th scope="col" colspan="3">School of Professional Advancement (SPA)</th>
+                        <th scope="col" colspan="1" class="text-center"><a class="PTCHRAdd" href=" #" id="myBtn"><i
+                                    class="m-1 fa fa-plus" aria-hidden="true"></i></a></th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr>
+                        <th scope="row"></th>
+                        <td><strong>Khalil Ahmed Abri</strong></td>
+                        <td><strong>Director School of Professional Advancement</strong></td>
+                        <td class="link text-center">
+                            <!-- <a
+                                class="PEdit" href="#"><i class="m-1 fa fa-pencil-square-o"
+                                    aria-hidden="true"></i></a><a class="PDelete" href="#"><i class="m-1 fa fa-trash-o"
+                                    aria-hidden="true"></i></a> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Afifa Wajid</td>
+                        <td>Lecturer</td>
+                        <td class="link text-center">
+                            <a class="PEdit" href="#"><i class="m-1 fa fa-pencil-square-o" aria-hidden="true"></i></a><a
+                                class="PDelete" href="#"><i class="m-1 fa fa-trash-o" aria-hidden="true"></i></a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Imran Saleem</td>
+                        <td>Assistant Professor, Program Adviser (IT Related Programs)</td>
+                        <td class="link text-center">
+                            <a class="PEdit" href="#"><i class="m-1 fa fa-pencil-square-o" aria-hidden="true"></i></a><a
+                                class="PDelete" href="#"><i class="m-1 fa fa-trash-o" aria-hidden="true"></i></a>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Muhammad Umar Hameed</td>
+                        <td>Lecturer</td>
+                        <td class="link text-center">
+                            <a class="PEdit" href="#"><i class="m-1 fa fa-pencil-square-o" aria-hidden="true"></i></a><a
+                                class="PDelete" href="#"><i class="m-1 fa fa-trash-o" aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <!-- End of List of Student -->
+
+    <!-- Add Teacher Model -->
+    <div class="modal fade bd-example-modal-xl" id="myModal" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <form>
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-UNi">
+                        <h4 class="modal-title"> Add Teacher to SPA</h4>
+                    </div>
+                    <!-- <div class="divider"></div> -->
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div>
+
+                            <div class="card card-animation my-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Login Credentials</h4>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="userid">User ID</label>
+                                            <input type="text" class="form-control" id="userid" minlength="11" maxlength="11" placeholder="User ID"
+                                                value="" required>
+                                            <div class="invalid-feedback">
+                                                Valid User ID is required. First Letter should be "T" or "t" and also
+                                                contains 11 Characters only.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="userpass">Password</label>
+                                            <input type="password" class="form-control" id="userpass"
+                                                placeholder="Password" value="" minlength="6" required>
+                                            <div class="invalid-feedback">
+                                                Password must be greater than 6 characters.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-animation my-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Personal Information</h4>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="txtfirstname">First Name</label>
+                                            <input type="text" class="form-control" id="txtfirstname"
+                                                placeholder="First Name" value="" required>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="txtlastname">Last Name</label>
+                                            <input type="text" class="form-control" id="txtlastname"
+                                                placeholder="Last Name" value="" required>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="txtemail">Email</label>
+                                            <input type="email" class="form-control" id="txtemail" placeholder="Email"
+                                                value="" required>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="txtcnic">CNIC</label>
+                                            <input type="text" class="form-control" id="txtcnic" minlength="13" maxlength="15" placeholder="CNIC"
+                                                value="" required>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cbcity">City</label>
+                                            <select name="cbcity" class="custom-select d-block" id="cbcity" required>
+                                                <option selected>Select</option>
+                                                <option value="LHR">Lahore</option>
+                                                <option value="RPD">Rawalpindi</option>
+                                                <option value="ISB">Islamabad</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cbcountry">Country</label>
+                                            <select name="cbcountry" class="custom-select d-block" id="cbcountry"
+                                                required>
+                                                <option selected>Select</option>
+                                                <option value="PK">Pakistan</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cbschool">School</label>
+                                            <select name="cbschool" class="custom-select d-block" id="cbschool"
+                                                required>
+                                                <option selected>Select</option>
+                                                <option value="SPA">School of Professional Advancement (SPA)</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="txtpost">Post</label>
+                                            <input type="text" class="form-control" id="txtpost" placeholder="Post"
+                                                value="" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>               
+                        </div>
+                    </div>
+                    
+                    <!-- Modal footer -->
+                    <div class="modal-footer bg-UNi">
+                        <button type="submit" class="btn btn-UNi">Save</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- End -->
+
+
+
+    <!-- Footer -->
+    <footer class=" pt-5 text-muted text-center mt-5">
+        <p class="mb-1">&copy; 2020 UNi Portal Management System</p>
+        <ul class="list-inline">
+            <li class="list-inline-item "><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <!-- End of Footer -->
+
+
+    <!-- Custom Script -->
+
+    <!-- End of Custom Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/7c58c9e194.js" crossorigin="anonymous"></script>
+    <script src="/js/Shared/SharedJS.js"></script>
+</body>
+
+</html>
